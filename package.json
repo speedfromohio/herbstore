@@ -1,0 +1,12 @@
+{
+  "name": "herbs-store",
+  "version": "1.0.0",
+  "description": "Herbs Store — Vanilla JS frontend with Razorpay serverless API on Vercel",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "razorpay": "^2.9.4"
+  }
+}
