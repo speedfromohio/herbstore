@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herbs Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <div class="navbar-inner container">
+      <a href="#" class="brand" data-page="home">Herbs Store</a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="nav-link" data-page="home">Home</a>
+        <a href="#" class="nav-link" data-page="orders">Orders</a>
+        <a href="#" class="nav-link" data-page="auth">Login</a>
+        <a href="#" class="nav-link cart-link" data-page="cart">
+          Cart
+          <span id="cartCount" class="cart-badge hidden">0</span>
+        </a>
+      </div>
+
+      <div class="nav-mobile-actions">
+        <a href="#" class="cart-link icon-btn" data-page="cart">
+          🛒
+          <span id="cartCountMobile" class="cart-badge hidden">0</span>
+        </a>
+        <button class="icon-btn" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <a href="#" class="mobile-link" data-page="home">Home</a>
+      <a href="#" class="mobile-link" data-page="orders">Orders</a>
+      <a href="#" class="mobile-link" data-page="auth">Login</a>
+    </div>
+  </nav>
+
+  <!-- ============ MAIN APP ============ -->
+  <main id="app"></main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Herbs Store</span>
+      <p class="footer-text">
+        Bringing the healing power of nature directly to your doorstep. Organic, pure, and sustainably sourced.
+      </p>
+      <p class="footer-copy">© 2026 Herbs Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden">
+    <span id="toastText"></span>
+  </div>
+
+  <!-- Supabase JS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <!-- Razorpay Checkout -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
